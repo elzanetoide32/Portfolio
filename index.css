@@ -1,0 +1,193 @@
+.body{
+  background-color: #252A2E;
+  color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    filter:blur(0.8px);
+  }
+  
+
+.Skills {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+  }
+  .Skills .card {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+  }
+
+  .carousel-container {
+    align-items: center;
+    justify-content: center;
+    position: relative;    
+    margin: 2px;
+    overflow: hidden;
+  }
+  .carousel {    
+    display: flex;
+    gap: 16px;
+    transition: transform 0.5s ease-in-out;
+    width: max-content;
+  }
+  .carousel-container2 {
+    align-items: center;
+    justify-content: center;
+    position: relative;    
+    margin: 2px;
+    overflow: hidden;
+  }
+  .carousel2 {    
+    display: flex;
+    gap: 16px;
+    transition: transform 0.5s ease-in-out;
+    width: max-content;
+  }
+  .Skills .card2 {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 16px;
+  }
+/*
+.tinos-regular {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tinos-bold {
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tinos-regular-italic {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.tinos-bold-italic {
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+*/
+
+.alfa{
+  height: 200px;
+ }
+
+.dark-mode {
+  background-color:#002333;
+  color: white;
+}
+
+/* Botón */
+button {
+  padding: 10px;
+  margin: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+}
+
+
+.card:hover {
+  background: rgba(28,182,152,.8);;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+.card2:hover {
+  background:rgba(28,182,152,.8);
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+#About {
+
+  padding: 50px 20px;
+  margin: 10%;
+  display: inline-block;
+  animation-name: example;
+  animation-duration: 3s;
+}
+@keyframes example {
+  from {translate: 200px;}
+  to {translate: 0px;}
+}
+#seccion{
+  animation-name: example2;
+  animation-duration: 3s;
+}
+@keyframes example2 {
+  from {translate: -200px;}
+  to {translate: 0px;}
+}
+
+.Alfa{
+  display: inline-block;
+}
+.Alfa:hover a img{
+  transform: scale(1.1); /* Ejemplo: hacer zoom en las imágenes */
+  transition: transform 0.3s ease;
+}
+
+#footer{
+  background-image: url(img/contact_bg.png);
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 0;
+}
+
+#seccion{
+  background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(/porto/img/fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.logos img {
+  width: 40px;
+  height: 40px;
+}
+
+
+/* Responsividad */
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+  }
+  .logos img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+
+
+
